@@ -1,0 +1,186 @@
+
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1a1a2e;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      background: #0f0f1a;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: #f8875b;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 30px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f8875b;
+    }
+    section {
+      padding: 100px 40px;
+    }
+    .hero {
+      background: url(download-Picsart-AiImageEnhancer.jfif);
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: wheat;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .socials {
+      margin-top: 20px;
+    }
+    .socials a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+    .socials a:hover {
+      color: #f8875b;
+    }
+    .about, .skills, .projects, .contact {
+      max-width: 1000px;
+      margin: auto;
+    }
+    .about p, .skills p, .contact p {
+      margin-top: 20px;
+    }
+    .skills ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+    .skills li {
+      margin-bottom: 10px;
+    }
+    .projects img {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact input, .contact textarea {
+      padding: 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+    .contact button {
+      background: #f8875b;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact button:hover {
+      background: #ff6b35;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f0f1a;
+      color: #aaa;
+      margin-top: 50px;
+    }
+    @media (max-width: 768px) {
+      nav a {
+        margin-left: 15px;
+      }
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+    @keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+
+body {
+  animation: fadeIn 1s ease-in-out;
+}
+
+header {
+  animation: slideDown 0.6s ease-in-out;
+}
+
+.hero h1,
+.hero p,
+.about,
+.skills,
+.projects,
+.contact {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+.projects img {
+  transition: transform 0.3s ease;
+}
+
+.projects img:hover {
+  transform: scale(1.03);
+}
+
+
+.socials a {
+  transition: color 0.3s, transform 0.3s;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+.contact button {
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contact button:hover {
+  background: #ff6b35;
+  transform: translateY(-2px);
+}

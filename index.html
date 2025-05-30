@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afnas | Web Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+   <link rel="stylesheet" href="Personal.css">
+   <script src="personal.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "ZuUA77vCIE8PttO-4",
+      });
+   })();
+</script>
+</head>
+<body>
+  <header>
+    <div class="logo">Afnas</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+ <section id="home" class="hero">
+  <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 250px; text-align: center;">
+      <h1>Hello, <br>I'm Afnas</h1>
+      <p>Creative Web Developer</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/afnx_mp4/"><i class="fab fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=916235004189"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div style="flex: 1; min-width: 250px; text-align: center;">
+      <img src="IMG_6581.png" alt="Afnas" style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 20px rgba(0,0,0,0.6); margin-top: 20px;" />
+    </div>
+  </div>
+</section>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a passionate Web Developer with a strong foundation in building clean, responsive, and user-friendly websites. Skilled in HTML, CSS, and JavaScript, I focus on creating seamless web experiences that look great and perform well across all devices. I enjoy turning ideas into functional, interactive websites and continuously learning new technologies to improve my craft.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="skills-text">
+      <h2>Skills</h2>
+      <p><strong>HTML:</strong> I write semantic, accessible, and SEO-friendly HTML to create the structure and content of web pages.</p>
+      <p><strong>CSS:</strong> I use modern CSS (Flexbox, Grid, Media Queries) to style websites with responsive layouts and engaging visual effects.</p>
+      <p><strong>JavaScript:</strong> I bring interactivity to websites using vanilla JavaScript and dynamic DOM manipulation.</p>
+      <p><strong>Version Control:</strong> I use Git & GitHub to manage code versions and collaborate efficiently.</p>
+      <p><strong>Responsive Design:</strong> I ensure that web pages look and perform well on devices of all sizes.</p>
+    </div>
+  
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <img src="WhatsApp Image 2025-05-29 at 10.39.31_42d2d30e.jpg" alt="Project 1">
+    <img src="WhatsApp Image 2025-05-29 at 10.39.41_131742f2.jpg" alt="Project 2">
+    <img src="WhatsApp Image 2025-05-29 at 10.39.53_fdf8dc2a.jpg" alt="Project 3">
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="sendMail(); return false;">
+      <input type="text" id="Name" placeholder="Your Name" required />
+      <input type="email" id="Mail" placeholder="Your Email" required />
+      <input type="text" id="Sub" placeholder="Subject" />
+      <textarea id="textarea" placeholder="Message" rows="5"></textarea>
+      <button type="submit" onclick="sendMail()">Send Message</button>
+    </form>
+    <p>Phone: +91 6235004189 | Email: Afnasappu2005@gmail.com | Location: Kinfra Park, Kakkancheri</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Afnas. All rights reserved.</p>
+  </footer>
+
+
+  
+</body>
+</html>
